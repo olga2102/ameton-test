@@ -177,6 +177,9 @@ ul {
 
 .support__item {
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 0 0 calc(25% - .8rem);
     max-width: calc(25% - .8rem);
     border-radius: 12px;
@@ -492,11 +495,13 @@ ul {
     width: 22px;
     height: 22px;
     background-color: transparent;
-    border: none;
+    border: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .help__close svg path {
+    display: block;
     fill: #949494;
     transition: .3s linear;
 }
@@ -607,6 +612,9 @@ ul {
 }
 
 @media screen and (max-width: 1279px) {
+    .support__item:nth-child(4) .support__item-link::before {
+        width: 16px;
+    }
     .support__title {
         font-size: 3rem;
     }
