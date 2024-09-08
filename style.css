@@ -677,6 +677,17 @@ ul {
         max-width: 100%;
     }
 
+    .support__item {
+        margin-bottom: 1rem;
+        flex: 0 0 calc(50% - .5rem);
+        max-width: calc(50% - .5rem);
+        border-radius: 10px;
+    }
+
+    .support__item:nth-child(2n) {
+        margin-right: 0;
+    }
+
     .support__inner::after {
         top: 35%;
         width: 87px;
@@ -765,17 +776,6 @@ ul {
         bottom: 7rem;
         width: 20px;
         height: 20px;
-    }
-
-    .support__item {
-        margin-bottom: 1rem;
-        flex: 0 0 calc(50% - .5rem);
-        max-width: calc(50% - .5rem);
-        border-radius: 10px;
-    }
-
-    .support__item:nth-child(2n) {
-        margin-right: 0;
     }
 
     .social__txt, .faq__title, .help__title {
