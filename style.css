@@ -501,7 +501,6 @@ ul {
 }
 
 .help__close svg path {
-    display: block;
     fill: #949494;
     transition: .3s linear;
 }
@@ -511,6 +510,7 @@ ul {
 }
 
 .help__close svg {
+    display: block;
     transition: .3s linear;
 }
 
